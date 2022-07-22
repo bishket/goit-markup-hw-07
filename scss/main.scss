@@ -4,7 +4,9 @@
 @import './utils/base';
 @import './utils/hidden';
 
+@import './layouts/container';
 
+@import './components/section';
 @import './components/links';
 @import './components/buttons';
 @import './components/title'; 
@@ -23,6 +25,12 @@
 @import './components/cta';
 @import './components/backdrop';
 @import './components/modal';
-@import './components/forms';
+@import './components/form-fild';
 @import './components/filters';
 @import './components/portfolio';
+@import './components/footer-logo';
+@import './components/feedback';
+@import './components/checkbox';
+@import './components/modal-button';
+@import './components/.portfolio-overlay';
+@import './components/cart-thumb';

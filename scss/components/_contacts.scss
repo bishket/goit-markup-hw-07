@@ -1,51 +1,53 @@
 .contacts {
     display: flex;
-}
 
-.contacts__item:not(:last-child) {
-    margin-right: 50px;
-}
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
 
-.contacts__link {
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    &__link {
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
 
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
 
-    transition: color var(--timing-function);
-}
+        transition: color var(--timing-function);
+    }
 
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-color);
-}
+    &__link:hover,
+    &__link:focus {
+        color: var(--accent-color);
+    }
 
-.contacts__icon-envelope {
-    fill: var(--text-color);
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    transition: fill var(--timing-function);
-}
+    &__icon-envelope {
+        fill: var(--text-color);
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
+        transition: fill var(--timing-function);
 
-.contacts__icon-smartphone {
-    fill: var(--text-color);
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    transition: fill var(--timing-function);
-}
+        .contacts__link:hover &,
+        .contacts__link:focus & {
+            fill: var(--accent-color);
+        }
 
-.contacts__link:hover .contacts__icon-envelope,
-.contacts__link:focus .contacts__icon-envelope {
-    fill: var(--accent-color);
-}
+    }
 
-.contacts__link:hover .contacts__icon-smartphone,
-.contacts__link:focus .contacts__icon-smartphone {
-    fill: var(--accent-color);
+    &__icon-smartphone {
+        fill: var(--text-color);
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+        transition: fill var(--timing-function);
+
+        .contacts__link:hover &,
+        .contacts__link:focus & {
+            fill: var(--accent-color);
+        }
+    }
+
 }
