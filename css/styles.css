@@ -409,6 +409,17 @@ img {
   margin-right: 10px;
 }
 
+.social-networks__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--timing-function);
+}
+
 .social-networks__icon {
   fill: var(--background-svg);
   width: 20px;
@@ -420,6 +431,11 @@ img {
 .social-networks__link:hover .social-networks__icon,
 .social-networks__link:focus .social-networks__icon {
   fill: var(--background-basic);
+}
+
+.social-networks__link:hover,
+.social-networks__link:focus {
+  background-color: var(--accent-color);
 }
 
 /* Постійні клієнти */
@@ -642,7 +658,7 @@ img {
   transition: opacity var(--timing-function), visibility var(--timing-function);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -665,14 +681,14 @@ img {
   transition: opacity var(--timing-function);
 }
 
-.icon-close {
+.modal-button__icon {
   width: 11px;
   height: 11px;
   transition: fill var(--timing-function);
 }
 
-.modal-button:hover .icon-close,
-.modal-button:focus .icon-close {
+.modal-button:hover .modal-button__icon,
+.modal-button:focus .modal-button__icon {
   fill: var(--accent-color);
 }
 
@@ -697,7 +713,7 @@ img {
 }
 
 /* Форма користувача */
-.modal-inner-title {
+.modal-inner__title {
   margin-bottom: 12px;
   font-style: normal;
   font-size: 20px;
@@ -717,7 +733,7 @@ img {
 .feedback {
   margin-bottom: 20px;
 }
-.form-fild-input {
+.form-fild__input {
   width: 100%;
   height: 40px;
   padding: 12px 12px 12px 42px;
@@ -728,16 +744,16 @@ img {
   transition: border var(--timing-function);
 }
 
-.form-fild-input:focus {
+.form-fild__input:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
 
-.form-fild:focus-within .form-fild-icon {
+.form-fild:focus-within .form-fild__icon {
   fill: var(--accent-color);
 }
 
-.form-fild-feedback {
+.feedback__form-fild {
   width: 100%;
   height: 120px;
   padding: 12px;
@@ -751,16 +767,16 @@ img {
   letter-spacing: 0.01em;
 }
 
-.form-fild-feedback:focus {
+.feedback__form-fild:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
 
-.form-fild-input::placeholder {
+.form-fild__input::placeholder {
   color: var(--text-color);
 }
 
-.form-fild-label {
+.form-fild__label {
   display: block;
   margin-bottom: 4px;
   font-style: normal;
@@ -770,11 +786,11 @@ img {
   letter-spacing: 0.01em;
 }
 
-.form-fild-inner {
+.form-fild__inner {
   position: relative;
 }
 
-.form-fild-icon {
+.form-fild__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -787,14 +803,14 @@ img {
   transition: fill var(--timing-function);
 }
 
-.checkbox-thumb {
+.checkbox {
   display: flex;
   margin-bottom: 30px;
   position: relative;
   justify-content: center;
 }
 
-.checkbox-icon {
+.checkbox__icon {
   display: inline-block;
   margin-right: 8px;
 
@@ -806,13 +822,13 @@ img {
   transition: background-color var(--timing-function), border-color var(--timing-function);
 }
 
-.checkbox-input:checked ~ .checkbox-icon {
+.checkbox__input:checked ~ .checkbox__icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   background-size: contain;
 }
 
-.checkbox-input {
+.checkbox__input {
   margin-right: 7px;
   position: absolute;
   width: 1px;
@@ -824,11 +840,11 @@ img {
   overflow: hidden;
 }
 
-.form-fild-link {
+.form-fild__link {
   color: var(--accent-color);
 }
 
-.form-fild-button {
+.form-fild__button {
   justify-content: center;
   display: flex;
   align-items: center;

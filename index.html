@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="html" lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,10 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
-  <body>
+  <body class="body">
     <header>
       <div class="container header">
         <nav class="site-nav">
@@ -464,62 +464,62 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
-          <svg class="icon-close" aria-hidden="true">
-            <use href="./images/first-page/icons/symbol-defs.svg#icon-close"></use>
+          <svg class="modal-button__icon" aria-hidden="true">
+            <use href="./images/first-page/icons/symbol-defs.svg#modal-button__icon"></use>
           </svg>
         </button>
         <div class="modal-inner">
-          <h2 class="modal-inner-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <h2 class="modal-inner__title">Залиште свої дані, ми вам передзвонимо</h2>
           <form class="form" name="main-form" autocomplete="on" novalidate>
             <div class="form-fild">
-              <label class="form-fild-label" for="user-name">Ім'я</label>
-              <div class="form-fild-inner">
-                <input class="form-fild-input" id="user-name" type="text" name="user-name" />
-                <svg class="form-fild-icon" aria-hidden="true">
+              <label class="form-fild__label" for="user-name">Ім'я</label>
+              <div class="form-fild__inner">
+                <input class="form-fild__input" id="user-name" type="text" name="user-name" />
+                <svg class="form-fild__icon" aria-hidden="true">
                   <use href="./images/first-page/icons/symbol-defs.svg#icon-person-black"></use>
                 </svg>
               </div>
             </div>
             <div class="form-fild">
-              <label class="form-fild-label" for="user-tel">Телефон</label>
-              <div class="form-fild-inner">
-                <input class="form-fild-input" id="user-tel" type="tel" name="user-tel" />
-                <svg class="form-fild-icon" aria-hidden="true">
+              <label class="form-fild__label" for="user-tel">Телефон</label>
+              <div class="form-fild__inner">
+                <input class="form-fild__input" id="user-tel" type="tel" name="user-tel" />
+                <svg class="form-fild__icon" aria-hidden="true">
                   <use href="./images/first-page/icons/symbol-defs.svg#icon-phone-black"></use>
                 </svg>
               </div>
             </div>
             <div class="form-fild">
-              <label class="form-fild-label" for="user-email">Пошта</label>
-              <div class="form-fild-inner">
-                <input class="form-fild-input" id="user-email" type="email" name="user-email" />
-                <svg class="form-fild-icon" aria-hidden="true">
+              <label class="form-fild__label" for="user-email">Пошта</label>
+              <div class="form-fild__inner">
+                <input class="form-fild__input" id="user-email" type="email" name="user-email" />
+                <svg class="form-fild__icon" aria-hidden="true">
                   <use href="./images/first-page/icons/symbol-defs.svg#icon-email-black"></use>
                 </svg>
               </div>
             </div>
             <div class="feedback">
-              <label class="form-fild-label" for="feedback">Коментар</label>
+              <label class="form-fild__label" for="feedback">Коментар</label>
               <textarea
-                class="form-fild-feedback"
+                class="feedback__form-fild"
                 name="feedback"
                 rows="7"
                 placeholder="Введіть текст"
                 id="feedback"
               ></textarea>
             </div>
-            <div class="checkbox-thumb">
-              <input class="checkbox-input" id="checkbox" type="checkbox" name="checkbox" />
-              <svg class="checkbox-icon" aria-hidden="true">
+            <div class="checkbox">
+              <input class="checkbox__input" id="checkbox" type="checkbox" name="checkbox" />
+              <svg class="checkbox__icon" aria-hidden="true">
                 <use href="./images/first-page/icons/symbol-defs.svg#icon-icon-check"></use>
               </svg>
 
-              <label class="checkbox-label" for="checkbox">
+              <label class="checkbox__label" for="checkbox">
                 Погоджуюся з розсилкою та приймаю
-                <a class="form-fild-link" href="#">Умови договору</a>
+                <a class="form-fild__link" href="#">Умови договору</a>
               </label>
             </div>
-            <div class="form-fild-button">
+            <div class="form-fild__button">
               <button class="button fild-button" type="submit">Відправити</button>
             </div>
           </form>

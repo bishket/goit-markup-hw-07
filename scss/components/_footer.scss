@@ -1,0 +1,25 @@
+.footer {
+    background-color: var(--background-secondary);
+    padding: 60px 0;
+}
+
+
+.footer-logo__color {
+    color: var(--accent-color);
+}
+
+.footer-logo__link {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: var(--background-basic);
+    font-family: Raleway, cursive;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
