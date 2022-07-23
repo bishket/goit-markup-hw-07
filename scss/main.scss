@@ -1,10 +1,12 @@
 
 
 @import './utils/variables';
-@import './utils/base';
 @import './utils/hidden';
 
-@import './layouts/container';
+@import './base/common';
+@import './base/reset';
+
+
 
 @import './components/section';
 @import './components/links';
@@ -13,24 +15,27 @@
 @import './components/header';
 @import './components/site-nav';
 @import './components/contacts';
-@import './components/hero' ;
-@import './components/features';
 @import './components/preview';
-@import './components/team';
 @import './components/social-networks';
-@import './components/clients';
-@import './components/footer';
 @import './components/sing-up';
 @import './components/address';
 @import './components/cta';
 @import './components/backdrop';
-@import './components/modal';
 @import './components/form-fild';
-@import './components/filters';
-@import './components/portfolio';
 @import './components/footer-logo';
 @import './components/feedback';
 @import './components/checkbox';
 @import './components/modal-button';
 @import './components/.portfolio-overlay';
 @import './components/cart-thumb';
+
+
+@import './layouts/container';
+@import './layouts/clients';
+@import './layouts/features';
+@import './layouts/filters';
+@import './layouts/footer';
+@import './layouts/hero';
+@import './layouts/modal';
+@import './layouts/portfolio';
+@import './layouts/team';
